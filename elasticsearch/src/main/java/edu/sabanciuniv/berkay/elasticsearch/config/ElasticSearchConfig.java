@@ -33,7 +33,6 @@ public class ElasticSearchConfig {
                 .put("cluster.name", EsClusterName)
                 .build();
 
-        //https://www.elastic.co/guide/en/elasticsearch/guide/current/_transport_client_versus_node_client.html
         return TransportClient.builder()
                 .settings(esSettings)
                 .build()
